@@ -1,0 +1,14 @@
+path: C:\Users\User\Desktop\AI_Project\YOLO_dataset
+train: images/train
+val: images/val
+
+nc: 8
+names:
+  0: Overloaded_power_strip
+  1: Unstable_stack_of_books
+  2: Exposed_wires
+  3: Spilled_liquid
+  4: Scattered_pile
+  5: loose_cable
+  6: Unstable_stacking
+  7: Damaged_furniture
