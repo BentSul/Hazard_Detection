@@ -1,8 +1,5 @@
 streamlit
-ultralytics
-opencv-python-headless
-pillow
-numpy
-matplotlib
 streamlit-webrtc
 av
+ultralytics
+opencv-python-headless
