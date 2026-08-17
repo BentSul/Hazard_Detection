@@ -2,6 +2,7 @@ path: C:\Users\User\Desktop\AI_Project\YOLO_dataset
 train: images/train
 val: images/val
 
+# nc represents the number of classes (detectables per our problem space) we can detect [this system is not built to incorporate everything] 
 nc: 8
 names:
   0: Overloaded_power_strip
