@@ -17,11 +17,11 @@ st.set_page_config(
 
 st.title("⚠️ Real-Time Hazard Detection")
 
-model = YOLO("best.pt")
+model = YOLO("best.pt")  #loading the weights of our trained model with the YOLO class
 
 
 class HazardDetector(VideoProcessorBase):
-
+    
     def recv(self, frame):
 
         # Convert incoming browser frame to OpenCV
@@ -74,7 +74,7 @@ class HazardDetector(VideoProcessorBase):
             format="bgr24"
         )
 
-
+# Using the streamlit web streamer to gain access to the camera set of the client running the application
 webrtc_streamer(
     key="hazard-detection",
     video_processor_factory=HazardDetector,
