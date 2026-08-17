@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from hazard_scoring import score_detections, detections_from_yolo_result
 
 # Load the trained YOLO model
-model = YOLO("C:\\Users\\User\\Desktop\\best.pt")
+model = YOLO("best.pt")
 
 # --- Single Image Detection and Scoring (Colab-friendly) ---
 # IMPORTANT: Ensure 'test_18.jpg' is uploaded to the Colab environment
