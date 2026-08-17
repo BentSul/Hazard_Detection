@@ -56,7 +56,7 @@ def box_center(box_xyxy):
 
 
 def distance(p1, p2):
-    return math.hypot(p1[0] - p2[0], p1[1] - p2[1])
+    return math.hypot(p1[0] - p2[0], p1[1] - p2[1])    # calculating the euclidean distances from the centers of the bounding boxes
 
 
 def risk_level(score):
@@ -145,12 +145,13 @@ def detections_from_yolo_result(result):
 # 5. QUICK TEST (run this file directly to sanity check the logic)
 # ---------------------------------------------------------------------
 
+# Setting the base condition for running the script
 if __name__ == "__main__":
     # fake detections to prove the scoring logic works before touching YOLO
     fake_detections = [
         {"class_name": "Overloaded_power_strip", "box": [100, 100, 150, 150], "confidence": 0.9},
         {"class_name": "Unstable_stack_of_books", "box": [180, 120, 230, 170], "confidence": 0.8},
-    ]
+    ]  #Fake detections just to make sure what we did is consistent enough
 
     result = score_detections(fake_detections)
     print(result)
