@@ -22,6 +22,7 @@ HAZARD_WEIGHTS = {
     "Damaged_furniture": 5,
 }
 
+
 # Combo bonus — triggers when BOTH classes in the pair are detected
 # close together in the same frame. Key = frozenset of the two class
 # names (order doesn't matter), value = extra points added.
