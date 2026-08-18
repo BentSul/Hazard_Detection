@@ -11,7 +11,7 @@ import math
 # 1. CONFIG — edit this as your class list grows
 # ---------------------------------------------------------------------
 
-# Base severity weight per class (0-10 scale, tune these as a team)
+# Base severity weight per class (0-10 scale, decided on by us)
 HAZARD_WEIGHTS = {
     "Overloaded_power_strip": 6,
     "Unstable_stack_of_books": 4,
